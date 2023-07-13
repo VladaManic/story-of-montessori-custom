@@ -950,6 +950,17 @@
             }
           }
         },
+        "newsletter": {
+          "name": "Newsletter",
+          "settings": {
+            "newsletter_enable": {
+              "label": "Show email signup"
+            },
+            "newsletter_heading": {
+              "label": "Heading"
+            }
+          }
+        },
         "text": {
           "name": "Text",
           "settings": {
