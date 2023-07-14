@@ -1,4 +1,11 @@
-<a href="{{ product_product.url }}" class="prod-wrapper">
+<a
+  href="{{ product_product.url }}"
+  class="prod-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    style="--animation-order: {{ index }};"
+  {% endif %}
+>
   {% if product_product.featured_image %}
     <div class="img-wrap">
       <img
